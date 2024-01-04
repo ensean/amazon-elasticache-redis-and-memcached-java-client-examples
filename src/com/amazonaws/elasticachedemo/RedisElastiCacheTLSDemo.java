@@ -282,10 +282,10 @@ public class RedisElastiCacheTLSDemo {
 	 * @throws ExecutionException the execution exception
 	 */
 	public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
-		RedisElastiCacheDemo redisElastiCacheDemo = new RedisElastiCacheDemo();
-		redisElastiCacheDemo.upsertCacheEntries("Name", "Value", false);
-		redisElastiCacheDemo.getRandomCacheValue("Name");
-		redisElastiCacheDemo.deleteRandomCacheEntry("Name");
-		redisElastiCacheDemo.shutdown();
+		RedisElastiCacheTLSDemo RedisElastiCacheTLSDemo = new RedisElastiCacheTLSDemo();
+		RedisElastiCacheTLSDemo.upsertCacheEntries("Name", "Value", false);
+		RedisElastiCacheTLSDemo.getRandomCacheValue("Name");
+		RedisElastiCacheTLSDemo.deleteRandomCacheEntry("Name");
+		RedisElastiCacheTLSDemo.shutdown();
 	}
 }
